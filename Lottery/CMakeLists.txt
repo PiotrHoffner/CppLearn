@@ -9,9 +9,9 @@ set(MainDir ${CMAKE_CURRENT_SOURCE_DIR})
 
 include_directories(${MainDir}/include)
 
-add_library(Sources
+add_library(LotteryLib
     ${MainDir}/source/Draw.cpp
     ${MainDir}/source/Lotto.cpp)
 
 add_executable(Lottery main.cpp)
-target_link_libraries(Lottery Sources)
+target_link_libraries(Lottery LotteryLib)

@@ -9,11 +9,11 @@ set(MainDir ${CMAKE_CURRENT_SOURCE_DIR})
 
 include_directories(${MainDir}/include)
 
-add_library(Sources
+add_library(PolymorphismLib
     ${MainDir}/source/Animal.cpp 
     ${MainDir}/source/Cat.cpp 
     ${MainDir}/source/Cow.cpp 
     ${MainDir}/source/Dog.cpp)
 
 add_executable(Polymorphism main.cpp)
-target_link_libraries(Polymorphism Sources)
+target_link_libraries(Polymorphism PolymorphismLib)
